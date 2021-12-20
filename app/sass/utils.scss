@@ -1,0 +1,41 @@
+@import "colors.scss";
+
+.hide {
+  display: none;
+}
+
+.tac {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.abs-center-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.abs-center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-with-ratio {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
