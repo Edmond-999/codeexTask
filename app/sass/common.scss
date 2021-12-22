@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Gilda Display', serif;
+  font-family: "Gilda Display", serif;
 }
 
 img {
@@ -18,15 +18,47 @@ button {
   cursor: pointer;
 }
 
-button, input {
+.btn {
+  padding: 11px;
+  min-width: 200px;
+  transition: all 300ms;
+  &.bg-rose {
+    color: $white;
+    border: 1px solid transparent;
+    &:hover {
+      color: $rose;
+      border: 1px solid $rose;
+      background: $cream;
+    }
+  }
+  &.bg-cream {
+    color: $black;
+    border: 1px solid $rose;
+    &:hover {
+      color: $white;
+      border: 1px solid $rose;
+      background-color: $rose;
+    }
+  }
+}
+
+button,
+input {
   font-family: inherit;
 }
 
 .container {
-  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   // @media only screen and (max-width: 1024px) {
-  //   
+  //
   // }
+}
+
+.figure {
+  position: relative;
+  width: 100%;
 }
 
 // Show owlCarousel dots and hide nav
@@ -60,5 +92,11 @@ button, input {
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  body {
+    padding-bottom: 120px;
   }
 }

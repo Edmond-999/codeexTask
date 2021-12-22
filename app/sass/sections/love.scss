@@ -1,0 +1,45 @@
+.love {
+  .content {
+    flex-grow: 1;
+    padding: 50px 90px;
+  }
+  .title {
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+  .descr {
+    max-width: 200px;
+  }
+  .figure-container {
+    width: 45%;
+  }
+  .figure {
+    padding-top: 89%;
+    font-size: 0;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .love {
+    flex-direction: column;
+    .content {
+      padding: 40px 32px;
+    }
+    .title {
+      font-size: 50px;
+    }
+    span .fz64 {
+      font-size: 58px;
+    }
+    .descr {
+      font-size: 24px;
+      max-width: 190px;
+    }
+    span .fz48 {
+      font-size: 38px;
+    }
+    .figure-container {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.header {
+  padding: 0 32px;
+  height: 131px;
+  align-items: center;
+  .main-logo-link {
+    flex: none;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  .main-logo {
+    max-width: 158px;
+    font-size: 0;
+  }
+  .input-wrapper {
+    position: relative;
+  }
+  .input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $white;
+    width: 438px;
+    height: 32px;
+    font-size: 24px;
+    padding: 0 44px 0 10px;
+    &::placeholder {
+      color: $white;
+      font-size: 24px;
+      opacity: 0.8;
+    }
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $white;
+    }
+  }
+  .search-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    font-size: 0;
+  }
+  .search-icon {
+    width: 24px;
+    transition: all ease 500ms;
+  }
+  .link-item {
+    width: 24px;
+  }
+  .header-nav {
+    display: flex;
+    gap: 38px;
+  }
+  .nav-link {
+    text-align: center;
+    transition: all 0.1s linear;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .nav-title {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .header {
+    height: initial;
+    .header-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background-color: $rose;
+      justify-content: center;
+      padding: 20px;
+    }
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+      gap: 0;
+    }
+    .input-wrapper {
+      width: 100%;
+    }
+    .input {
+      width: 100%;
+      height: 36px;
+      background: rgba($white, 0.5);
+      border-radius: 10px;
+      padding: 0 10px 0 50px;
+      border-bottom: none;
+      &::placeholder {
+        font-size: 17px;
+      }
+      &:focus {
+        border: none;
+      }
+    }
+    .search-button {
+      right: initial;
+      left: 4px;
+    }
+    .nav-title {
+      font-size: 10px;
+    }
+  }
+}

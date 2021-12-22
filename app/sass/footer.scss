@@ -1,0 +1,39 @@
+.footer {
+  .footer-top {
+    padding: 32px 55px;
+    justify-content: space-between;
+  }
+  .footer-content {
+    width: 50%;
+    gap: 64px;
+    margin-right: 10px;
+    flex-grow: 1;
+    .content {
+      flex-direction: column;
+      gap: 16px;
+      padding: 30px 0;
+      & + .content {
+        padding-left: 64px;
+        border-left: 1px solid $white;
+      }
+    }
+  }
+  .footer-ul {
+    list-style: none;
+    gap: 72px;
+  }
+  .footer-social-logo {
+    width: 36px;
+  }
+  .footer-copyright {
+    padding: 36px 20px;
+    text-align: center;
+    border-top: 1px solid $white;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .footer {
+    display: none;
+  }
+}

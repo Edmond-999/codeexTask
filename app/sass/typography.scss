@@ -1,7 +1,62 @@
 @import "colors.scss";
 
+.fz12 {
+  font-size: 12px;
+}
+
 .fz14 {
   font-size: 14px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.fz20 {
+  font-size: 20px;
+}
+.fz24 {
+  font-size: 24px;
+}
+
+.fz25 {
+  font-size: 25px;
+}
+
+.fz26 {
+  font-size: 26px;
+}
+
+.fz30 {
+  font-size: 30px;
+}
+
+.fz36 {
+  font-size: 36px;
+}
+
+.fz48 {
+  font-size: 48px;
+}
+
+.fz50 {
+  font-size: 50px;
+}
+
+.fz64 {
+  font-size: 64px;
+}
+
+.fz66 {
+  font-size: 66px;
+}
+
+.fz72 {
+  font-size: 72px;
+}
+
+.fz95 {
+  font-size: 95px;
 }
 
 .fw300 {
@@ -9,7 +64,7 @@
 }
 
 .fw400 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .fw500 {
@@ -36,10 +91,46 @@
   color: $black;
 }
 
+.c-black50 {
+  color: $black50;
+}
+
+.c-rose {
+  color: $rose;
+}
+
+.c-cream {
+  color: $cream;
+}
+
+.c-cream100 {
+  color: $cream100;
+}
+
 .bg-white {
   background-color: $white;
 }
 
 .bg-black {
   background-color: $black;
+}
+
+.bg-rose {
+  background-color: $rose;
+}
+
+.bg-cream {
+  background-color: $cream;
+}
+
+.bg-cream100 {
+  background-color: $cream100;
+}
+
+.bg-cream200 {
+  background-color: $cream200;
+}
+
+.archivo {
+  font-family: "Archivo", sans-serif;
 }

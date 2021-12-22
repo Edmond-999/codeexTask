@@ -7,19 +7,438 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/app.min.css" />
-    <link rel="icon" href="images/" type="image/png" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header class="header"></header>
+
+    <header class="header bg-rose d-flex">
+      <menu class="menu d-flex">
+        <a href="#" class="main-logo-link">
+          <img src="./images/main-logo.svg" alt="Main logo" class="main-logo">
+        </a>
+        <div class="input-wrapper">
+          <input type="text" class="input c-white" placeholder="Search">
+          <button class="search-button">
+            <img src="./images/search-icon.svg" alt="search icon" class="search-icon">
+          </button>
+        </div>
+        <nav class="header-nav">
+            <a href="#" class="nav-link">
+              <img src="./images/location-icon.svg" alt="location icon" class="link-item">
+              <span class="nav-title c-white fz20">Location</span>
+            </a>
+            <a href="#" class="nav-link">
+              <img src="./images/hearth-icon.svg" alt="hearth icon" class="link-item">
+              <span class="nav-title c-white fz20">Favorites</span>
+            </a>
+            <a href="#" class="nav-link">
+              <img src="./images/sale-icon.svg" alt="sale icon" class="link-item">
+              <span class="nav-title c-white fz20">Cart</span>
+            </a>
+            <a href="#" class="nav-link">
+              <img src="./images/user-icon.svg" alt="user icon" class="link-item">
+              <span class="nav-title c-white fz20">Sign in / up</span>
+            </a>
+          </nav>
+      </menu>
+    </header>
+
+    <div class="sub-header bg-cream">
+      <div class="container d-flex">
+        <button class="burger-wrapper d-flex">
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="button all-btn fz18 c-black">All</div>
+        </button>
+        <ul class="sub-ul d-flex">
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">New</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Best Sellers</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Eyes</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Lips</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Face</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Skin care</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Brushes</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Perfume</a>
+          </li>
+          <li class="sub-li">
+            <a href="#" class="sub-link fz18 c-black">Delivery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <main class="homepage">
-      <section class="hero">
-        <h1>hello wolrd</h1>
-      </section>
-    </main>
 
-    <footer class="footer"></footer>
+      <section class="hero bg-cream100 d-flex">
+        <div class="figure-container">
+          <figure class="figure">
+            <img src="./images/hero-img.svg" alt="hero image" class="hero-img img-with-ratio">
+          </figure>
+        </div>
+        <div class="content-container">
+          <div class="content">
+            <img class="title-img" src="./images/hero-title.jpg" alt="title image">
+            <p class="subtitle fz64 c-rose">We <span class="fz95">don’t</span>  test our product on animals </p>
+          </div>
+        </div>
+        <a href="#" target="blank" class="share-link">
+          <img src="./images/share-icon.svg" alt="share" class="icon">
+        </a>
+      </section>
+
+      <section class="sale">
+        <div class="container">
+          <p class="section-title">Sale</p>
+          <div class="sale-cards d-flex">
+            <div class="card bg-cream">
+              <div class="card-top">
+                <div class="sale-percent d-flex">
+                  <p class="percent fz36 c-white bg-rose">20%</p>
+                  <button class="fav-button">
+                    <img src="./images/like-icon.svg"  alt="like icon" class="fav-icon">
+                    <img src="./images/liked-icon.svg" alt="like icon" class="filled-icon">
+                  </button>
+                </div>
+                <div class="figure-container">
+                  <figure class="figure">
+                    <img src="./images/card-img.jpg" alt="card image" class="card-img img-with-ratio">
+                  </figure>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p class="card-descr fz12 c-black">Light Sand - light with neutral undertones</p>
+                <ul class="card-colors">
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <button class="plus-button">
+                    <img src="./images/plus-icon.svg" alt="plus icon" class="plus-icon">
+                  </button>
+                </ul>
+                <p class="card-title fz18 c-black">Lip Exfoliator</p>
+                <div class="card-price">
+                  <p class="fz18 c-black">$ 40.00</p>
+                  <p class="fz14 c-black old-price">$52.50</p>
+                </div>
+                <button class="card-btn btn bg-cream fz24">Add to card</button>
+              </div>
+            </div>
+  
+            <div class="card bg-cream">
+              <div class="card-top">
+                <div class="sale-percent d-flex">
+                  <p class="percent fz36 c-white bg-rose">15%</p>
+                  <button class="fav-button">
+                    <img src="./images/like-icon.svg"  alt="like icon" class="fav-icon">
+                    <img src="./images/liked-icon.svg" alt="like icon" class="filled-icon">
+                  </button>
+                </div>
+                <div class="figure-container">
+                  <figure class="figure">
+                    <img src="./images/card-img-2.jpg" alt="card image" class="card-img img-with-ratio">
+                  </figure>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p class="card-descr fz12 c-black">Light Sand - light with neutral undertones</p>
+                <ul class="card-colors">
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <button class="color-button"></button>
+                  </li>
+                  <button class="plus-button">
+                    <img src="./images/plus-icon.svg" alt="plus icon" class="plus-icon">
+                  </button>
+                </ul>
+                <p class="card-title fz18 c-black">Camo Concealer</p>
+                <div class="card-price">
+                  <p class="fz18 c-black">$ 87.80</p>
+                  <p class="fz14 c-black old-price">$ 103.3</p>
+                </div>
+                <button class="card-btn btn bg-cream fz24">Add to card</button>
+              </div>
+            </div>
+            <div class="card bg-cream">
+              <div class="card-top">
+                <div class="sale-percent d-flex">
+                  <p class="percent fz36 c-white bg-rose">5%</p>
+                  <button class="fav-button">
+                    <img src="./images/like-icon.svg"  alt="like icon" class="fav-icon">
+                    <img src="./images/liked-icon.svg" alt="like icon" class="filled-icon">
+                  </button>
+                </div>
+                <div class="figure-container">
+                  <figure class="figure">
+                    <img src="./images/card-img-3.jpg" alt="card image" class="card-img img-with-ratio">
+                  </figure>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p class="card-descr fz12 c-black">Bahamas</p>
+                <ul class="card-colors">
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-rose"></button>
+                  </li>
+                  <li class="color">
+                    <button class="color-button bg-white"></button>
+                  </li>
+                  <button class="plus-button">
+                    <img src="./images/plus-icon.svg" alt="plus icon" class="plus-icon">
+                  </button>
+                </ul>
+                <p class="card-title fz18 c-black">Camo Concealerr</p>
+                <div class="card-price">
+                  <p class="fz18 c-black">$ 47.50</p>
+                  <p class="fz14 c-black old-price">$50.00</p>
+                </div>   
+                <button class="card-btn btn bg-cream fz24">Add to card</button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="more-btn btn bg-rose fz24 c-white ">More</a>
+        </div>
+      </section>
+
+      <section class="try-free bg-cream d-flex">
+        <div class="figure-container">
+          <figure class="figure">
+            <img src="./images/try-img.jpg" alt="person" class="img img-with-ratio">
+          </figure>
+        </div>
+        <div class="content">
+          <p class="title fz66 c-black50">New Neauthy product for you’r face care</p>
+          <a href="#" class="try-free fz24 c-black50">Try Free</a>
+        </div>
+       
+        <div class="figure-container-parfume">
+          <figure class="figure-parfume">
+            <img src="./images/try-img-2.jpg" alt="product" class="img img-with-ratio">
+          </figure>
+        </div>
+      </section>
+  
+      <section class="gift">
+        <div class="container">
+          <h2 class="section-title">Give gifts even at a distance</h2>
+          <div class="gift-cards d-flex">
+            <div class="gift-card d-flex">
+              <div class="figure-container">
+                <figure class="figure">
+                  <img src="./images/gift-card-figure.jpg" alt="Gift" class="img">
+                </figure>
+              </div>
+              <div class="content-wrapper bg-cream">
+                <div class="content bg-white">
+                  <p class="content-descr fz24 c-black">Make your loved ones happy</p>
+                  <p class="content-descr fz18 c-black">Gifts in original packaging</p>
+                  <p class="content-descr fz26 c-rose">With home delivery</p>
+                  <a href="#" class="order-button bg-rose c-white">Order</a>
+                </div>
+              </div>
+            </div>
+            <div class="gift-card d-flex">
+              <div class="figure-container">
+                <figure class="figure">
+                  <img src="./images/gift-card.svg" alt="gift card" class="img">
+                </figure>
+              </div>
+              <div class="order-content">
+                <p class="order-descr fz24 c-black">Gift cards for your lovely ones</p>
+                <a href="#" class="card-order-btn bg-rose c-white">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="beauty">
+        <div class="container">
+          <h4 class="section-title">Beauty squad exclusive</h4>
+        </div>
+        <div class="section-wrapper bg-cream">
+          <div class="container d-flex">
+            <div class="content">
+              <h5 class="title fz36 c-black bg-white">Points  =  Free product</h5>
+              <h6 class="subtitle fz25 c-black">Now you can redeem points for full-size products.</h6>
+              <a href="#" class="sign-upBtn btn bg-rose fz24 fw400 c-white">Sign in or Join us</a>
+            </div>
+            <div class="images-container d-flex">
+              <div class="figure-container">
+                <figure class="figure">
+                  <img src="./images/beauty-img.jpg" alt="pomade" class="img img-with-ratio">
+                </figure>
+                <p class="img-descr fz18 c-black">Ride or die in boss berry</p>
+              </div>
+              <div class="figure-container">
+                <figure class="figure">
+                  <img src="./images/beauty-img-1.jpg" alt="perfume" class="img img-with-ratio">
+                </figure>
+                <p class="img-descr fz18 c-black">Parfume Chanel yellow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="love d-flex">
+        <div class="content bg-cream200">
+          <p class="title fz72 c-black">Feel <span class="fz95">Love</span> Everywhere </p>
+          <p class="descr fz30 c-black50">New Parfume <span class="fz48">di Gioia</span> all for you ~</p>
+        </div>
+        <div class="figure-container">
+          <figure class="figure">
+            <img src="./images/gioia-parfume.jpg" alt="Parfume image" class="img-with-ratio">
+          </figure>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <p class="section-title">Our products in use</p>
+        </div>
+        <div class="content-wrapper d-flex">
+          <div class="figure-container">
+            <figure class="figure">
+              <img src="./images/product-img.jpg" alt="person" class="img">
+            </figure>
+          </div>
+          <div class="figure-container middle">
+            <figure class="figure">
+              <img src="./images/product-img-2.jpg" alt="person" class="img">
+            </figure>
+          </div>
+          <div class="figure-container">
+            <figure class="figure">
+              <img src="./images/product-img-3.jpg" alt="person" class="img">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <button class="chat-btn">
+        <img src="./images/message-icon.svg" alt="chat" class="chat-icon">
+      </button>
+      
+      <footer class="footer bg-rose">
+          <div class="footer-top d-flex">
+            <div class="footer-content d-flex">
+              <div class="content d-flex">
+                <p class="title fz24 c-white archivo">HELP</p>
+                <a href="#" class="content-a fz20 c-white">Contact US</a>
+                <a href="#" class="content-a fz20 c-white">Track Package</a>
+              </div>
+              <div class="content d-flex">
+                <p class="title fz24 c-white archivo">DISCOVER</p>
+                <a href="#" class="content-a fz20 c-white">About US</a>
+                <a href="#" class="content-a fz20 c-white">Careers</a>
+                <a href="#" class="content-a fz20 c-white">Where to buy</a>
+              </div>
+              <div class="content d-flex">
+                <p class="title fz24 c-white archivo">SERVICES</p>
+                <a href="#" class="content-a fz20 c-white">My Account</a>
+                <a href="#" class="content-a fz20 c-white">Beauty Squad</a>
+                <a href="#" class="content-a fz20 c-white">Whis list</a>
+                <a href="#" class="content-a fz20 c-white">Gift Cards</a>
+              </div>
+            </div>
+            <ul class="footer-ul d-flex">
+              <li class="footer-li">
+                <a href="#" class="footer-social-a">
+                  <img src="./images/instagram-logo.svg" alt="instagram logo" class="footer-social-logo">
+                </a>
+              </li>
+              <li class="footer-li">
+                <a href="#" class="footer-social-a">
+                  <img src="./images/fb-logo.svg" alt="facebook logo" class="footer-social-logo">
+                </a>
+              </li>
+              <li class="footer-li">
+                <a href="#" class="footer-social-a">
+                  <img src="./images/telegram-logo.svg" alt="telegram logo" class="footer-social-logo">
+                </a>
+              </li>
+              <li class="footer-li">
+                <a href="#" class="footer-social-a">
+                  <img src="./images/tiktok-logo.svg" alt="tiktok logo" class="footer-social-logo">
+                </a>
+              </li>
+              <li class="footer-li">
+                <a href="#" class="footer-social-a">
+                  <img src="./images/pinterest-logo.svg" alt="pinterest logo" class="footer-social-logo">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-copyright">
+            <small class="fz24 c-white">Copyright ©2021 President and Fellows of Rai Sim</small>
+          </div>
+      </footer>
+    </main>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/app.min.js"></script>

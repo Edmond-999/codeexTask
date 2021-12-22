@@ -1,11 +1,7 @@
 @import "colors.scss";
 
 .hide {
-  display: none;
-}
-
-.tac {
-  text-align: center;
+  display: none !important;
 }
 
 .d-flex {
@@ -38,4 +34,42 @@
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.figure-container {
+  font-size: 0;
+}
+
+.section-title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid $rose;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 400;
+  color: $black;
+  margin-bottom: 80px;
+}
+
+.chat-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: all 300ms;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .chat-btn {
+    right: 10px;
+    bottom: 80px;
+    z-index: 5;
+    .chat-icon {
+      width: 100px;
+    }
+  }
 }

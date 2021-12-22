@@ -1,0 +1,38 @@
+.products {
+  padding: 140px 0 64px 0;
+  .container {
+    padding: 0 32px;
+  }
+  .content-wrapper {
+    gap: 45px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .figure-container {
+    width: 32%;
+    &.middle {
+      width: 30%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .products {
+    padding: 64px 0;
+    .section-title {
+      margin-bottom: 40px;
+    }
+    .content-wrapper {
+      flex-direction: column;
+      gap: 25px;
+    }
+    .figure-container {
+      width: 100%;
+      max-width: 350px;
+      &.middle {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  }
+}
